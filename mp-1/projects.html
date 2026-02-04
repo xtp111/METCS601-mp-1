@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Projects</h1>
+  <p>Projects section of my resume</p>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="experience.html">Experience</a></li>
+<li><a href="certifications.html">Certifications</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="references.html">References</a></li>
+  </ul>
+</nav>
+<main>
+  <p>This is the Projects page.</p>
+
+<div class="calculator">
+  <form id="calculator">
+  <label for="a">Calculator</label>
+  <input type="text" id="a">
+  <label for="b">Calculator</label>
+  <input type="text" id="b">
+
+  <div class="buttons">
+    <button type="button" onclick="addNumbers()">+</button>
+    <button type="button" onclick="subNumbers()">-</button>
+    <button type="button" onclick="mulNumbers()">*</button>
+    <button type="button" onclick="divNumbers()">/</button>
+    <button type="button" onclick="power()">**</button>
+    <button type="button" onclick="clearAll()">Clear</button>
+
+  </div>
+  <h3 id="output"></h3>
+    </form>
+</div>
+
+</main>
+<footer>
+  <p>&copy; 2026 <a href="#">Credits</a></p>
+</footer>
+<script src="js/calculator.js"></script>
+</body>
+</html>
