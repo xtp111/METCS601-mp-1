@@ -1,9 +1,10 @@
 /* Reset default margin and set global font */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background-color: #ffffff; /* White background */
   color: #333;
+  font-size: calc(14px + 0.5vw);
 }
 
 /* Header section styling */
@@ -15,6 +16,7 @@ header {
   color: white;
   font-weight: bold;
   border-radius: 4px;
+  text-align: center;
 }
 
 /* Navigation section styling */
@@ -185,6 +187,42 @@ footer {
     width: 65%;
     float: right;
   }
+
+  header {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: calc(24px + 1vw);
+  }
+
+  h2 {
+    font-size: calc(20px + 0.8vw);
+  }
+
+  p {
+    font-size: calc(14px + 0.3vw);
+  }
+
+  @media screen and (max-width: 749px) {
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 5px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    main {
+      max-width: 70%;
+    }
+  }
+
+
 }
 
 
