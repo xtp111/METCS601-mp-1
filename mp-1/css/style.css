@@ -205,6 +205,18 @@ footer {
   header {
     text-align: left;
   }
+
+  h1 {
+    font-size: calc(24px + 1vw);
+  }
+
+  h2 {
+    font-size: calc(20px + 0.8vw);
+  }
+
+  p {
+    font-size: calc(14px + 0.3vw);
+  }
 }
 
 /* Large screens (>=1000px): Main max-width 70% */
@@ -213,4 +225,3 @@ footer {
     max-width: 70%;
   }
 }
-
