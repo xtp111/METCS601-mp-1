@@ -16,7 +16,7 @@ header {
   color: white;
   font-weight: bold;
   border-radius: 4px;
-  text-align: center;
+  text-align: center; /* Default center alignment for small screens */
 }
 
 /* Navigation section styling */
@@ -111,7 +111,8 @@ footer {
 
 /* Calculator container */
 .calculator {
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   margin: 30px auto;
   padding: 20px;
   background: #ffffff;
@@ -173,8 +174,20 @@ footer {
   font-weight: bold;
 }
 
+/* Small screens (<750px): Horizontal navigation layout */
+@media screen and (max-width: 749px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-/* Desktop layout: apply when screen width is 750px or wider */
+  nav li {
+    margin: 0 10px 5px 10px;
+  }
+}
+
+/* Medium screens (>=750px): Vertical sidebar navigation, left-aligned header */
 @media screen and (min-width: 750px) {
   /* Navigation becomes a left sidebar */
   nav {
@@ -188,41 +201,16 @@ footer {
     float: right;
   }
 
+  /* Header left-aligned */
   header {
     text-align: left;
   }
-
-  h1 {
-    font-size: calc(24px + 1vw);
-  }
-
-  h2 {
-    font-size: calc(20px + 0.8vw);
-  }
-
-  p {
-    font-size: calc(14px + 0.3vw);
-  }
-
-  @media screen and (max-width: 749px) {
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    nav li {
-      margin: 5px;
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    main {
-      max-width: 70%;
-    }
-  }
-
-
 }
 
+/* Large screens (>=1000px): Main max-width 70% */
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 70%;
+  }
+}
 
