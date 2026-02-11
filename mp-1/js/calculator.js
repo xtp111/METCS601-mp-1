@@ -44,5 +44,5 @@ function clearAll() {
   document.getElementById("b").value = "";
   const out = document.getElementById("output");
   out.innerHTML = "";
-  out.className = "";   // ← 清除负数红色样式
+  out.className = "";
 }
